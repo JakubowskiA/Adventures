@@ -1,0 +1,9 @@
+<h1>Our Adventures</h1>
+<br>
+<%@adventures.each do |adventure|%>
+<%=link_to adventure.name, adventure_path(adventure)%>
+<br>
+<br>
+<br>
+<% end %>
+<%=button_to "Add an Adventure", new_adventure_path(@adventure)%>

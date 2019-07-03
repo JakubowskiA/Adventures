@@ -1,0 +1,10 @@
+<h1><%=@adventure.name%></h1>
+<br>
+<h2><%=@adventure.place.name%>, <%=@adventure.year%></h2>
+<br>
+<h3><%=@adventure.memory%></h3>
+<br>
+<%=link_to "Edit", edit_adventure_path(@adventure)%>
+<br>
+<%=link_to "Delete", @adventure, :method => :delete%>
+
